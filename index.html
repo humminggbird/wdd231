@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joel Dadzie | WDD 231 Home</title>
+  <meta name="description"
+    content="WDD 231 course home page for Joel Dadzie, a web and software development student in Accra, Ghana. The page also includes the Web and Computer Programming certificate course list.">
+  <meta name="author" content="Joel Dadzie">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/course.js" defer></script>
+</head>
+
+<body>
+  <header class="jd-header">
+    <div class="jd-brand">
+      <img src="images/JD-logo.png" alt="Joel Dadzie logo" class="logo" width="48" height="48">
+      <span class="jd-name">Joel Dadzie</span>
+    </div>
+    <button id="menu-button" class="menu-button" aria-label="Toggle navigation menu" aria-expanded="false"
+      aria-controls="primary-nav"></button>
+    <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html" class="current" aria-current="page">Home</a></li>
+        <li><a href="#">Chamber</a></li>
+        <li><a href="#">Final</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Home</h1>
+
+    <div class="home-grid">
+      <section class="card about">
+        <h2>About Me</h2>
+        <p>
+          Hello! I'm Joel Dadzie, a web and software development student based in
+          Accra, Ghana. I’m currently taking courses through BYU-Pathway Worldwide and
+          hope to earn a Software Development certificate in the next couple of years.
+          I'm working through the Web and Computer Programming
+          certificate, learning to build some of the best and most useful
+          websites. This page tracks my progress and showcases the front-end
+          skills I'm developing in WDD 231.
+        </p>
+      </section>
+
+      <section class="card photo">
+        <h2>Student Photo</h2>
+        <img src="images/myportraitactual.jpeg" alt="Portrait of Joel Dadzie" class="student-photo" width="600"
+          height="450" loading="lazy">
+      </section>
+
+      <section class="card courses">
+        <h2>Web Certificate Courses</h2>
+
+        <div class="filter-buttons" role="group" aria-label="Filter courses">
+          <button type="button" class="filter active" data-filter="all">All</button>
+          <button type="button" class="filter" data-filter="cse">CSE</button>
+          <button type="button" class="filter" data-filter="wdd">WDD</button>
+        </div>
+
+        <div id="course-cards" class="course-cards"></div>
+
+        <p class="credits">The total credits for courses listed above is
+          <span id="credit-total">0</span>
+        </p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="jd-footer">
+    <div class="social">
+      <a href="https://github.com/humminggbird" aria-label="Joel Dadzie on GitHub" target="_blank" rel="noopener">
+        <img src="images/github.svg" alt="GitHub" width="30" height="30">
+      </a>
+      <a href="https://linkedin.com/in/joel-dadzie/" aria-label="Joel Dadzie on LinkedIn" target="_blank"
+        rel="noopener">
+        <img src="images/linkedin.svg" alt="LinkedIn" width="30" height="30">
+      </a>
+      <a href="https://x.com/" aria-label="I don't have an X account." target="_blank" rel="noopener">
+        <img src="images/x.svg" alt="X" width="30" height="30">
+      </a>
+    </div>
+    <p class="copyright">&copy; <span id="currentyear"></span> Joel Dadzie &bull; Accra, Ghana</p>
+    <p id="lastModified">Last Modification: </p>
+  </footer>
+</body>
+
+</html>
