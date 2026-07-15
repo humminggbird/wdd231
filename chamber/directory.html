@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Directory | Accra Chamber of Commerce</title>
+  <meta name="description"
+    content="Business directory for the Accra Chamber of Commerce. Browse member businesses across Greater Accra, Ghana, in grid or list view.">
+  <meta name="author" content="Joel Dadzie">
+
+  <link rel="icon" href="images/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <meta property="og:title" content="Directory | Accra Chamber of Commerce">
+  <meta property="og:description"
+    content="Browse member businesses of the Accra Chamber of Commerce in Greater Accra, Ghana.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://humminggbird.github.io/wdd231/chamber/images/favicon.png">
+  <meta property="og:url" content="https://humminggbird.github.io/wdd231/chamber/directory.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script src="scripts/directory.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img src="images/favicon.png" alt="Accra Chamber of Commerce logo" class="logo" width="160" height="96">
+      <span class="brand-name">Accra Chamber of Commerce</span>
+    </div>
+    <button id="menu-button" class="menu-button" aria-label="Toggle navigation menu" aria-expanded="false"
+      aria-controls="primary-nav"></button>
+    <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Discover</a></li>
+        <li><a href="directory.html" class="current" aria-current="page">Directory</a></li>
+        <li><a href="#">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Business Directory</h1>
+
+    <div class="view-toggle" role="group" aria-label="Choose directory view">
+      <button id="grid-view" class="toggle active" aria-pressed="true" title="Grid view">Grid</button>
+      <button id="list-view" class="toggle" aria-pressed="false" title="List view">List</button>
+    </div>
+
+    <div id="directory" class="directory grid"></div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-contact">
+      <p class="footer-title">Accra Chamber of Commerce</p>
+      <p>10 High Street</p>
+      <p>Accra, Ghana</p>
+      <p>info@accrachamber.org</p>
+      <p>+233 30 222 1101</p>
+    </div>
+
+    <div class="footer-social">
+      <a href="https://www.youtube.com/@accrachamberofcommerce5099" aria-label="Chamber on YouTube" target="_blank"
+        rel="noopener">
+        <img src="images/youtube.svg" alt="YouTube" width="34" height="34">
+      </a>
+      <a href="https://x.com/GhanaChamber" aria-label="Chamber on X" target="_blank" rel="noopener">
+        <img src="images/twitter.svg" alt="X" width="34" height="34">
+      </a>
+      <a href="https://www.linkedin.com/company/ghana-national-chamber-of-commerce-and-industry/?originalSubdomain=gh"
+        aria-label="Chamber on LinkedIn" target="_blank" rel="noopener">
+        <img src="images/linkedin.svg" alt="LinkedIn" width="34" height="34">
+      </a>
+    </div>
+
+    <div class="footer-dev">
+      <p>WDD 231 Class Project</p>
+      <p>Joel Dadzie</p>
+      <p>&copy; <span id="currentyear"></span> Accra Chamber of Commerce</p>
+      <p id="lastModified">Last Modification: </p>
+    </div>
+  </footer>
+</body>
+
+</html>

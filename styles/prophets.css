@@ -1,0 +1,112 @@
+:root {
+    --plum: #3b1f47;
+    --plum-deep: #2a1533;
+    --wine: #7c2d4a;
+    --gold: #c99a3f;
+    --cream: #f7f1e6;
+    --paper: #fffdf8;
+    --ink: #2b2430;
+    --muted: #6d6472;
+    --border: #e4d9c6;
+
+    --heading-font: "Fraunces", Georgia, "Times New Roman", serif;
+    --body-font: "Mulish", system-ui, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--body-font);
+    color: var(--ink);
+    background-color: var(--cream);
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+header {
+    padding: 2rem 1rem;
+    text-align: center;
+    background: linear-gradient(135deg, var(--plum) 0%, var(--plum-deep) 100%);
+    color: var(--cream);
+    border-bottom: 4px solid var(--gold);
+}
+
+header h1 {
+    margin: 0;
+    font-family: var(--heading-font);
+    font-weight: 700;
+    font-size: clamp(1.8rem, 4vw, 2.75rem);
+    letter-spacing: 0.5px;
+}
+
+main {
+    background-color: var(--paper);
+    padding: 1rem;
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+#cards section {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--paper);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 14px rgba(43, 21, 51, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+
+#cards h2 {
+    margin: 0;
+    padding: 0.85rem 1rem;
+    font-family: var(--heading-font);
+    font-weight: 600;
+    font-size: 1.15rem;
+    text-align: center;
+    color: var(--cream);
+    background-color: var(--wine);
+}
+
+#cards p {
+    margin: 0;
+    padding: 0.4rem 1rem;
+    font-size: 0.9rem;
+    color: var(--muted);
+}
+
+
+
+#cards img {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    margin-top: auto;
+    background-color: var(--paper);
+    border-top: 3px solid var(--gold);
+}
+
+
+footer {
+    margin-top: 2.5rem;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--cream);
+    background-color: var(--plum-deep);
+    border-top: 4px solid var(--gold);
+}

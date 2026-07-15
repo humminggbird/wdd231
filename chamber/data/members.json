@@ -1,0 +1,94 @@
+{
+  "members": [
+    {
+      "name": "Interplast Limited",
+      "tagline": "UPVC & HDPE pipe manufacturing",
+      "address": "109 Spintex Road, Accra",
+      "phone": "+233 30 281 9000",
+      "website": "https://interplast.com/",
+      "image": "interplast.png",
+      "membership": 3,
+      "category": "Manufacturing"
+    },
+    {
+      "name": "Ghandour Cosmetics Limited",
+      "tagline": "Skin & hair care manufacturing",
+      "address": "Plot 67, 1st Bypass off Spintex Road, Accra",
+      "phone": "+233 30 281 1900",
+      "website": "https://www.ghandourcosmetics.com/",
+      "image": "ghandour.png",
+      "membership": 3,
+      "category": "Cosmetics & Personal Care"
+    },
+    {
+      "name": "Accra City Hotel",
+      "tagline": "Ghana's first international hotel",
+      "address": "Barnes Road, Accra",
+      "phone": "+233 30 263 3863",
+      "website": "https://www.accracityhotel.com/",
+      "image": "accra-city-hotel.png",
+      "membership": 3,
+      "category": "Hospitality"
+    },
+    {
+      "name": "HPW Fresh & Dry Limited",
+      "tagline": "Dried fruit & fruit snacks",
+      "address": "Achimota New Station, Accra",
+      "phone": "+233 27 984 8722",
+      "website": "https://www.hpwag.com/",
+      "image": "hpw.svg",
+      "membership": 2,
+      "category": "Agro-processing"
+    },
+    {
+      "name": "Big Bond Roofing System Limited",
+      "tagline": "Roofing sheets manufacturer",
+      "address": "34 Mausoleum Lane, North Industrial Area, Accra",
+      "phone": "+233 50 129 0390",
+      "website": "https://bigbondgh.com/",
+      "image": "bigbond.png",
+      "membership": 2,
+      "category": "Construction & Roofing"
+    },
+    {
+      "name": "Neuce Ghana Paints Industries Ltd",
+      "tagline": "Decorative & industrial paints",
+      "address": "Dahwenya Road Free Zone Enclave, Accra",
+      "phone": "+233 57 643 7042",
+      "website": "https://www.neuce.com/",
+      "image": "neuce.png",
+      "membership": 2,
+      "category": "Paint Manufacturing"
+    },
+    {
+      "name": "mNotify Company Limited",
+      "tagline": "SMS, voice & bulk messaging",
+      "address": "Achimota, Accra",
+      "phone": "+233 54 150 9394",
+      "website": "https://www.mnotify.com/",
+      "image": "mnotify.png",
+      "membership": 1,
+      "category": "ICT & Messaging"
+    },
+    {
+      "name": "e-Crime Bureau",
+      "tagline": "Cybersecurity & investigations",
+      "address": "Oswald House, Adenta SDA Junction, Accra",
+      "phone": "+233 30 296 0397",
+      "website": "https://e-crimebureau.com/",
+      "image": "ecrime.png",
+      "membership": 1,
+      "category": "Cybersecurity"
+    },
+    {
+      "name": "SpeedPrints Ghana Limited",
+      "tagline": "Commercial printing services",
+      "address": "Off Mallam–Kasoa Highway, Ngleshie Amanfro, Accra",
+      "phone": "+233 30 396 7284",
+      "website": "https://www.speedprintsgh.com/",
+      "image": "speedprints.png",
+      "membership": 1,
+      "category": "Printing"
+    }
+  ]
+}
