@@ -60,6 +60,29 @@
   }
 }
 
+@media (min-width: 640px) {
+  .hero-img {
+    height: 440px;
+  }
+
+  .hero-overlay h1 {
+    font-size: 2.6rem;
+  }
+
+  .hero-overlay p {
+    font-size: 1.15rem;
+  }
+
+  .home-sections {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+
+  .spotlight-cards {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+}
+
 @media (min-width: 900px) {
   .directory.grid {
     grid-template-columns: repeat(3, 1fr);

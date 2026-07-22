@@ -4,23 +4,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Directory | Accra Chamber of Commerce</title>
+  <title>Home | Accra Chamber of Commerce</title>
   <meta name="description"
-    content="Business directory for the Accra Chamber of Commerce. Browse member businesses across Greater Accra, Ghana, in grid or list view.">
+    content="The Accra Chamber of Commerce connects and champions businesses across Greater Accra, Ghana. Join for networking, events, advocacy, and growth.">
   <meta name="author" content="Joel Dadzie">
 
   <link rel="icon" href="images/favicon.ico" sizes="any">
   <link rel="icon" type="image/png" href="images/favicon.png">
 
-  <meta property="og:title" content="Directory | Accra Chamber of Commerce">
+  <meta property="og:title" content="Home | Accra Chamber of Commerce">
   <meta property="og:description"
-    content="Browse member businesses of the Accra Chamber of Commerce in Greater Accra, Ghana.">
+    content="Connecting and championing businesses across Greater Accra, Ghana.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://humminggbird.github.io/wdd231/chamber/images/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Accra Chamber of Commerce - Member Business Directory">
-  <meta property="og:url" content="https://humminggbird.github.io/wdd231/chamber/directory.html">
+  <meta property="og:image:alt" content="Accra Chamber of Commerce">
+  <meta property="og:url" content="https://humminggbird.github.io/wdd231/chamber/index.html">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,7 +30,7 @@
   <link rel="stylesheet" href="styles/small.css">
   <link rel="stylesheet" href="styles/larger.css">
 
-  <script src="scripts/directory.js" defer></script>
+  <script src="scripts/home.js" defer></script>
 </head>
 
 <body>
@@ -43,23 +43,67 @@
       aria-controls="primary-nav"></button>
     <nav id="primary-nav" class="primary-nav" aria-label="Primary">
       <ul>
-        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html" class="current" aria-current="page">Home</a></li>
         <li><a href="#">Discover</a></li>
-        <li><a href="directory.html" class="current" aria-current="page">Directory</a></li>
+        <li><a href="directory.html">Directory</a></li>
         <li><a href="#">Join</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <h1>Business Directory</h1>
+    <section class="hero">
+      <img src="images/accra-hero.jpg"
+        alt="Independence Square in Accra, Ghana, lined with national flags and the Independence Arch"
+        class="hero-img" width="1200" height="799">
+      <div class="hero-overlay">
+        <h1>Accra Chamber of Commerce</h1>
+        <p>Connecting and championing business across Greater Accra.</p>
+        <a href="#" class="cta-button">Join ACC</a>
+      </div>
+    </section>
 
-    <div class="view-toggle" role="group" aria-label="Choose directory view">
-      <button id="grid-view" class="toggle active" aria-pressed="true" title="Grid view">Grid</button>
-      <button id="list-view" class="toggle" aria-pressed="false" title="List view">List</button>
+    <div class="home-sections">
+      <section class="events card-block">
+        <h2>Current Events</h2>
+        <ul class="event-list">
+          <li>
+            <span class="event-date">Aug 5</span>
+            <div>
+              <p class="event-title">Members' Business Breakfast</p>
+              <p class="event-meta">7:30 AM &bull; Accra City Hotel</p>
+            </div>
+          </li>
+          <li>
+            <span class="event-date">Aug 14</span>
+            <div>
+              <p class="event-title">Exporting to ECOWAS Workshop</p>
+              <p class="event-meta">10:00 AM &bull; ACC Training Hall</p>
+            </div>
+          </li>
+          <li>
+            <span class="event-date">Aug 22</span>
+            <div>
+              <p class="event-title">Young Entrepreneurs Networking Night</p>
+              <p class="event-meta">6:00 PM &bull; Kempinski Gold Coast</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="weather card-block">
+        <h2>Weather</h2>
+        <div id="current-weather" class="current-weather">
+          <p>Loading current conditions&hellip;</p>
+        </div>
+        <div id="forecast" class="forecast"></div>
+      </section>
     </div>
 
-    <div id="directory" class="directory grid"></div>
+    <section class="spotlights">
+      <h2>Business Spotlights</h2>
+      <div id="spotlight-cards" class="spotlight-cards"></div>
+    </section>
   </main>
 
   <footer class="site-footer">
