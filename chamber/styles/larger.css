@@ -81,6 +81,11 @@
   .spotlight-cards {
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   }
+
+  .join-grid {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
 }
 
 @media (min-width: 900px) {

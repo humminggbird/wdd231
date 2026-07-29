@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join | Accra Chamber of Commerce</title>
+    <meta name="description"
+        content="Apply to request to join the Accra Chamber of Commerce. You'll choose a membership level and submit the membership application form.">
+    <meta name="author" content="Joel Dadzie">
+
+    <link rel="icon" href="images/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <meta property="og:title" content="Join | Accra Chamber of Commerce">
+    <meta property="og:description"
+        content="Apply to request to join the Accra Chamber of Commerce in Greater Accra, Ghana.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://humminggbird.github.io/wdd231/chamber/images/og-image.png">
+    <meta property="og:url" content="https://humminggbird.github.io/wdd231/chamber/join.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/join.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="brand">
+            <img src="images/favicon.png" alt="Accra Chamber of Commerce logo" class="logo" width="160" height="96">
+            <span class="brand-name">Accra Chamber of Commerce</span>
+        </div>
+        <button id="menu-button" class="menu-button" aria-label="Toggle navigation menu" aria-expanded="false"
+            aria-controls="primary-nav"></button>
+        <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html" class="current" aria-current="page">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Join the Chamber</h1>
+
+        <div class="join-grid">
+            <section class="form-card">
+                <h2>Membership Application</h2>
+                <form method="get" action="thankyou.html" class="join-form">
+                    <label>First Name*
+                        <input type="text" name="first-name" id="first-name" title="Your first name"
+                            autocomplete="given-name" required>
+                    </label>
+
+                    <label>Last Name*
+                        <input type="text" name="last-name" id="last-name" title="Your last name"
+                            autocomplete="family-name" required>
+                    </label>
+
+                    <label>Organizational Title
+                        <input type="text" name="org-title" id="org-title"
+                            title="Your title within your organization (letters, hyphens and spaces, at least 7 characters)"
+                            autocomplete="organization-title" pattern="[A-Za-z\- ]{7,}">
+                    </label>
+
+                    <label>Email*
+                        <input type="email" name="email" id="email" title="Your email address" autocomplete="email"
+                            placeholder="you@example.com" required>
+                    </label>
+
+                    <label>Mobile Phone*
+                        <input type="tel" name="phone" id="phone" title="Your mobile phone number" autocomplete="tel"
+                            required>
+                    </label>
+
+                    <label>Business / Organization Name*
+                        <input type="text" name="organization" id="organization"
+                            title="Your business or organization name" autocomplete="organization" required>
+                    </label>
+
+                    <label>Membership Level
+                        <select name="membership-level" id="membership-level" title="Choose a membership level">
+                            <option value="" selected disabled>Select a level&hellip;</option>
+                            <option value="np">NP Membership (non-profit, no fee)</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+                    </label>
+
+                    <label>Business / Organization Description
+                        <textarea name="description" id="description"
+                            title="Briefly describe your business or organization" rows="4"></textarea>
+                    </label>
+
+                    <input type="hidden" name="timestamp" id="timestamp">
+
+                    <input type="submit" value="Join the Chamber" class="submit-button">
+                </form>
+            </section>
+
+            <section class="levels" aria-label="Membership levels">
+                <h2 class="levels-heading">Membership Levels</h2>
+
+                <div class="level-card np-card">
+                    <h3>Non-Profit Membership</h3>
+                    <button class="level-link" data-dialog="np-dialog">Learn More</button>
+                </div>
+
+                <div class="level-card bronze-card">
+                    <h3>Bronze Membership</h3>
+                    <button class="level-link" data-dialog="bronze-dialog">Learn More</button>
+                </div>
+
+                <div class="level-card silver-card">
+                    <h3>Silver Membership</h3>
+                    <button class="level-link" data-dialog="silver-dialog">Learn More</button>
+                </div>
+
+                <div class="level-card gold-card">
+                    <h3>Gold Membership</h3>
+                    <button class="level-link" data-dialog="gold-dialog">Learn More</button>
+                </div>
+            </section>
+        </div>
+
+        <dialog id="np-dialog" class="level-dialog">
+            <button class="close-dialog" aria-label="Close">&#10007;</button>
+            <h3>Non-Profit Membership</h3>
+            <p class="dialog-price">No fee</p>
+            <ul>
+                <li>Free listing in the online business directory</li>
+                <li>Invitations to chamber networking events</li>
+                <li>Monthly members' newsletter</li>
+                <li>Community advocacy on behalf of non-profits</li>
+            </ul>
+        </dialog>
+
+        <dialog id="bronze-dialog" class="level-dialog">
+            <button class="close-dialog" aria-label="Close">&#10007;</button>
+            <h3>Bronze Membership</h3>
+            <p class="dialog-price">GH&#8373; 300 / year</p>
+            <ul>
+                <li>Everything in Non-Profit membership</li>
+                <li>Discounted rates on training workshops</li>
+                <li>Access to member-only business breakfasts</li>
+                <li>Listing highlighted in the directory</li>
+            </ul>
+        </dialog>
+
+        <dialog id="silver-dialog" class="level-dialog">
+            <button class="close-dialog" aria-label="Close">&#10007;</button>
+            <h3>Silver Membership</h3>
+            <p class="dialog-price">GH&#8373; 750 / year</p>
+            <ul>
+                <li>Everything in Bronze membership</li>
+                <li>Eligibility for home-page business spotlights</li>
+                <li>Free entry to two chamber luncheons each year</li>
+                <li>Discounted event sponsorship rates</li>
+            </ul>
+        </dialog>
+
+        <dialog id="gold-dialog" class="level-dialog">
+            <button class="close-dialog" aria-label="Close">&#10007;</button>
+            <h3>Gold Membership</h3>
+            <p class="dialog-price">GH&#8373; 1,500 / year</p>
+            <ul>
+                <li>Everything in Silver membership</li>
+                <li>Priority home-page spotlight placement</li>
+                <li>Free training for up to five staff members</li>
+                <li>Complimentary booth at the annual trade expo</li>
+                <li>Featured advertising in chamber publications</li>
+            </ul>
+        </dialog>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-contact">
+            <p class="footer-title">Accra Chamber of Commerce</p>
+            <p>10 High Street</p>
+            <p>Accra, Ghana</p>
+            <p>info@accrachamber.org</p>
+            <p>+233 30 222 1101</p>
+        </div>
+
+        <div class="footer-social">
+            <a href="https://www.youtube.com/@accrachamberofcommerce5099" aria-label="Chamber on YouTube"
+                target="_blank" rel="noopener">
+                <img src="images/youtube.svg" alt="YouTube" width="34" height="34">
+            </a>
+            <a href="https://x.com/GhanaChamber" aria-label="Chamber on X" target="_blank" rel="noopener">
+                <img src="images/twitter.svg" alt="X" width="34" height="34">
+            </a>
+            <a href="https://www.linkedin.com/company/ghana-national-chamber-of-commerce-and-industry/?originalSubdomain=gh"
+                aria-label="Chamber on LinkedIn" target="_blank" rel="noopener">
+                <img src="images/linkedin.svg" alt="LinkedIn" width="34" height="34">
+            </a>
+        </div>
+
+        <div class="footer-dev">
+            <p>WDD 231 Class Project</p>
+            <p>Joel Dadzie</p>
+            <p>&copy; <span id="currentyear"></span> Accra Chamber of Commerce</p>
+            <p id="lastModified">Last Modification: </p>
+        </div>
+    </footer>
+</body>
+
+</html>

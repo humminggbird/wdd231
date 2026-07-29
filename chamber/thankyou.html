@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You | Accra Chamber of Commerce</title>
+    <meta name="description"
+        content="Thank you for applying to join the Accra Chamber of Commerce. A confirmation of your submitted application details.">
+    <meta name="author" content="Joel Dadzie">
+
+    <link rel="icon" href="images/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/thankyou.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="brand">
+            <img src="images/favicon.png" alt="Accra Chamber of Commerce logo" class="logo" width="160" height="96">
+            <span class="brand-name">Accra Chamber of Commerce</span>
+        </div>
+        <button id="menu-button" class="menu-button" aria-label="Toggle navigation menu" aria-expanded="false"
+            aria-controls="primary-nav"></button>
+        <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Thank You!</h1>
+
+        <section class="thankyou-card">
+            <p>Thank you for applying to join the Accra Chamber of Commerce. We have received
+                your application and a membership officer will contact you shortly.</p>
+
+            <h2>Your Application Details</h2>
+            <dl class="summary">
+                <dt>First Name</dt>
+                <dd id="out-first-name"></dd>
+                <dt>Last Name</dt>
+                <dd id="out-last-name"></dd>
+                <dt>Email</dt>
+                <dd id="out-email"></dd>
+                <dt>Mobile Phone</dt>
+                <dd id="out-phone"></dd>
+                <dt>Business / Organization</dt>
+                <dd id="out-organization"></dd>
+                <dt>Submitted</dt>
+                <dd id="out-timestamp"></dd>
+            </dl>
+
+            <a href="index.html" class="cta-button">Back to Home</a>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-contact">
+            <p class="footer-title">Accra Chamber of Commerce</p>
+            <p>10 High Street</p>
+            <p>Accra, Ghana</p>
+            <p>info@accrachamber.org</p>
+            <p>+233 30 222 1101</p>
+        </div>
+
+        <div class="footer-social">
+            <a href="https://www.youtube.com/@accrachamberofcommerce5099" aria-label="Chamber on YouTube"
+                target="_blank" rel="noopener">
+                <img src="images/youtube.svg" alt="YouTube" width="34" height="34">
+            </a>
+            <a href="https://x.com/GhanaChamber" aria-label="Chamber on X" target="_blank" rel="noopener">
+                <img src="images/twitter.svg" alt="X" width="34" height="34">
+            </a>
+            <a href="https://www.linkedin.com/company/ghana-national-chamber-of-commerce-and-industry/?originalSubdomain=gh"
+                aria-label="Chamber on LinkedIn" target="_blank" rel="noopener">
+                <img src="images/linkedin.svg" alt="LinkedIn" width="34" height="34">
+            </a>
+        </div>
+
+        <div class="footer-dev">
+            <p>WDD 231 Class Project</p>
+            <p>Joel Dadzie</p>
+            <p>&copy; <span id="currentyear"></span> Accra Chamber of Commerce</p>
+            <p id="lastModified">Last Modification: </p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -569,3 +569,231 @@ main h1 {
 .spotlight .badge {
   margin: 0.75rem 0 0;
 }
+
+.join-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.form-card {
+  background-color: var(--paper);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.form-card h2 {
+  margin: 0;
+  padding: 0.75rem 1rem;
+  font-size: 1.15rem;
+  color: var(--paper);
+  background-color: var(--green);
+}
+
+.join-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.25rem 1rem;
+}
+
+.join-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-weight: 600;
+}
+
+.join-form input,
+.join-form select,
+.join-form textarea {
+  padding: 0.6rem;
+  font-weight: 400;
+  color: var(--ink);
+  background-color: var(--paper);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
+
+.join-form input:focus,
+.join-form select:focus,
+.join-form textarea:focus {
+  outline: 2px solid var(--green);
+  outline-offset: 1px;
+}
+
+.join-form input:required:valid {
+  border-color: var(--green);
+}
+
+.join-form input:required:invalid:not(:placeholder-shown) {
+  border-color: var(--red);
+}
+
+.submit-button {
+  padding: 0.8rem;
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--paper);
+  background-color: var(--green);
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.submit-button:hover,
+.submit-button:focus {
+  background-color: var(--green-dark);
+}
+
+.levels-heading {
+  color: var(--green-dark);
+  text-align: center;
+}
+
+.level-card {
+  margin-bottom: 1rem;
+  padding: 1.25rem 1rem;
+  text-align: center;
+  background-color: var(--paper);
+  border: 1px solid var(--border);
+  border-left: 6px solid var(--green);
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  opacity: 0;
+  animation: card-in 0.6s ease forwards;
+}
+
+.np-card {
+  animation-delay: 0.1s;
+}
+
+.bronze-card {
+  border-left-color: #a97142;
+  animation-delay: 0.25s;
+}
+
+.silver-card {
+  border-left-color: #9aa2ab;
+  animation-delay: 0.4s;
+}
+
+.gold-card {
+  border-left-color: var(--gold);
+  animation-delay: 0.55s;
+}
+
+.level-card h3 {
+  margin: 0 0 0.75rem;
+  color: var(--green-dark);
+}
+
+.level-link {
+  padding: 0.5rem 1.25rem;
+  font-weight: 600;
+  color: var(--ink);
+  background-color: var(--gold);
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.level-link:hover,
+.level-link:focus {
+  background-color: #ffd94d;
+}
+
+@keyframes card-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .level-card {
+    opacity: 1;
+    animation: none;
+  }
+}
+
+.level-dialog {
+  position: relative;
+  width: min(90%, 420px);
+  padding: 1.5rem;
+  border: 0;
+  border-top: 6px solid var(--green);
+  border-radius: 10px;
+  color: var(--ink);
+}
+
+.level-dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.55);
+}
+
+.level-dialog h3 {
+  margin: 0 0 0.25rem;
+  color: var(--green-dark);
+}
+
+.dialog-price {
+  margin: 0 0 0.75rem;
+  font-weight: 700;
+  color: var(--green);
+}
+
+.level-dialog ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.level-dialog li {
+  margin-bottom: 0.4rem;
+}
+
+.close-dialog {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  width: 40px;
+  height: 40px;
+  font-size: 1rem;
+  color: var(--ink);
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.thankyou-card {
+  padding: 1.5rem;
+  background-color: var(--paper);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.thankyou-card h2 {
+  color: var(--green-dark);
+}
+
+.summary {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.5rem 1rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.summary dt {
+  font-weight: 600;
+  color: var(--green-dark);
+}
+
+.summary dd {
+  margin: 0;
+}
