@@ -88,6 +88,39 @@
   }
 }
 
+@media (min-width: 641px) {
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "c1 c2"
+      "c3 c4"
+      "c5 c6"
+      "c7 c8";
+  }
+
+  .place-card figure {
+    overflow: hidden;
+  }
+
+  .place-card figure img {
+    transition: transform 0.4s ease, filter 0.4s ease;
+  }
+
+  .place-card figure img:hover {
+    transform: scale(1.08);
+    filter: brightness(1.05) saturate(1.15);
+  }
+}
+
+@media (min-width: 1025px) {
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "c1 c2 c3 c4"
+      "c5 c6 c7 c8";
+  }
+}
+
 @media (min-width: 900px) {
   .directory.grid {
     grid-template-columns: repeat(3, 1fr);

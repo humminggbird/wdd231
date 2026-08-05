@@ -797,3 +797,134 @@ main h1 {
 .summary dd {
   margin: 0;
 }
+
+.discover-layout {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.visitor-message {
+  padding: 0.9rem 1rem;
+  background-color: #e6f2ec;
+  border-left: 6px solid var(--green);
+  border-radius: 8px;
+}
+
+.visitor-message p {
+  margin: 0;
+  font-weight: 600;
+  color: var(--green-dark);
+}
+
+.visit-elapsed {
+  margin-top: 0.25rem;
+  font-weight: 400;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.gallery {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "c1"
+    "c2"
+    "c3"
+    "c4"
+    "c5"
+    "c6"
+    "c7"
+    "c8";
+}
+
+.place-card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--paper);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.place-card:nth-child(1) {
+  grid-area: c1;
+}
+
+.place-card:nth-child(2) {
+  grid-area: c2;
+}
+
+.place-card:nth-child(3) {
+  grid-area: c3;
+}
+
+.place-card:nth-child(4) {
+  grid-area: c4;
+}
+
+.place-card:nth-child(5) {
+  grid-area: c5;
+}
+
+.place-card:nth-child(6) {
+  grid-area: c6;
+}
+
+.place-card:nth-child(7) {
+  grid-area: c7;
+}
+
+.place-card:nth-child(8) {
+  grid-area: c8;
+}
+
+.place-card h2 {
+  margin: 0;
+  padding: 0.75rem 1rem;
+  font-size: 1.1rem;
+  text-align: center;
+  color: var(--paper);
+  background-color: var(--green);
+}
+
+.place-card figure {
+  margin: 0;
+}
+
+.place-card figure img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+
+.place-card address {
+  padding: 0.75rem 1rem 0;
+  font-style: normal;
+  font-weight: 600;
+  color: var(--green-dark);
+}
+
+.place-card p {
+  padding: 0.5rem 1rem 1rem;
+  margin: 0;
+  flex: 1;
+}
+
+.learn-more {
+  margin: 0 1rem 1rem;
+  padding: 0.6rem 1.25rem;
+  font-weight: 600;
+  color: var(--ink);
+  background-color: var(--gold);
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.learn-more:hover,
+.learn-more:focus {
+  background-color: #ffd94d;
+}

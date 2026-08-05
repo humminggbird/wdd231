@@ -4,13 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thank You | Accra Chamber of Commerce</title>
+    <title>Discover | Accra Chamber of Commerce</title>
     <meta name="description"
-        content="Thank you for applying to join the Accra Chamber of Commerce. A confirmation of your submitted application details.">
+        content="Discover Accra, Ghana. Explore eight of Accra's most notable landmarks, markets, and attractions for visitors and prospective chamber members.">
     <meta name="author" content="Joel Dadzie">
 
     <link rel="icon" href="images/favicon.ico" sizes="any">
     <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <meta property="og:title" content="Discover | Accra Chamber of Commerce">
+    <meta property="og:description" content="Explore the landmarks and attractions of Accra, Ghana.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://humminggbird.github.io/wdd231/chamber/images/og-image.png">
+    <meta property="og:url" content="https://humminggbird.github.io/wdd231/chamber/discover.html">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +26,7 @@
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
 
-    <script src="scripts/thankyou.js" defer></script>
+    <script type="module" src="scripts/discover.js"></script>
 </head>
 
 <body>
@@ -34,7 +40,7 @@
         <nav id="primary-nav" class="primary-nav" aria-label="Primary">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="discover.html">Discover</a></li>
+                <li><a href="discover.html" class="current" aria-current="page">Discover</a></li>
                 <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
             </ul>
@@ -42,30 +48,16 @@
     </header>
 
     <main>
-        <h1>Thank You!</h1>
+        <h1>Discover Accra</h1>
 
-        <section class="thankyou-card">
-            <p>Thank you for applying to join the Accra Chamber of Commerce. We have received
-                your application and a membership officer will contact you shortly.</p>
+        <div class="discover-layout">
+            <aside class="visitor-message">
+                <p id="visitor-msg"></p>
+                <p id="visit-elapsed" class="visit-elapsed"></p>
+            </aside>
 
-            <h2>Your Application Details</h2>
-            <dl class="summary">
-                <dt>First Name</dt>
-                <dd id="out-first-name"></dd>
-                <dt>Last Name</dt>
-                <dd id="out-last-name"></dd>
-                <dt>Email</dt>
-                <dd id="out-email"></dd>
-                <dt>Mobile Phone</dt>
-                <dd id="out-phone"></dd>
-                <dt>Business / Organization</dt>
-                <dd id="out-organization"></dd>
-                <dt>Submitted</dt>
-                <dd id="out-timestamp"></dd>
-            </dl>
-
-            <a href="index.html" class="cta-button">Back to Home</a>
-        </section>
+            <div id="gallery" class="gallery"></div>
+        </div>
     </main>
 
     <footer class="site-footer">
