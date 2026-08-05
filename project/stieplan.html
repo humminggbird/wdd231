@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GhSolar Site Plan — Solar Panel Catalogue for Ghana</title>
+    <meta name="description"
+        content="Site plan for GhSolar, a solar panel catalogue for Ghana covering the site name, purpose, scenarios, colour scheme, typography and home page wireframes.">
+    <meta name="author" content="Joel Dadzie">
+
+    <!-- Open Graph tags so the page previews nicely when shared -->
+    <meta property="og:title" content="GhSolar Site Plan">
+    <meta property="og:description"
+        content="The planning document for GhSolar, a solar panel catalogue for the Ghanaian market.">
+    <meta property="og:image" content="https://joeldadzie.github.io/wdd231/finalproject/images/ghsolar-logo.webp">
+    <meta property="og:url" content="https://joeldadzie.github.io/wdd231/finalproject/siteplan.html">
+
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/siteplan.css">
+
+    <!-- The two fonts named in the typography section below -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&family=Space+Grotesk:wght@600;700&display=swap">
+</head>
+
+<body>
+
+    <header>
+        <h1>GhSolar Site Plan</h1>
+        <p>The planning document for a solar panel catalogue built for the Ghanaian market.</p>
+    </header>
+
+    <main>
+
+        <!-- 1. Site Name -->
+        <section>
+            <h2>Site Name</h2>
+            <p class="site-name">GhSolar</p>
+            <p>
+                The name joins <strong>Gh</strong>, the short form of Ghana used in the country code and in
+                the <em>.gh</em> domain, with <strong>Solar</strong>, the product the site is about. It is
+                short, easy to say out loud and easy to spell after hearing it once, which matters because
+                most people in Ghana will reach the site on a phone after being told about it by someone
+                else. It also makes the market clear straight away. People will know that this is solar pricing for
+                Ghana, in
+                Ghana cedis, not a general world catalogue.
+            </p>
+            <p>
+                A domain such as <span class="domain">ghsolar.com</span> or
+                <span class="domain">ghsolar.com.gh</span> would suit the site. Availability has not been
+                checked, as buying a domain is not required for this class.
+            </p>
+        </section>
+
+        <section>
+            <h2>Site Purpose</h2>
+            <p>
+                GhSolar helps people in Ghana choose a solar panel by putting the real numbers side by side.
+                The site provides a catalogue of at least fifteen panels with their wattage, efficiency,
+                price in Ghana cedis, expected lifespan and the company that sells them.
+            </p>
+            <p>
+                Because most panels used in Ghana are imported from China, the catalogue can be viewed three
+                ways: <strong>all</strong> panels, only those <strong>bought locally in Ghana</strong> at a
+                local retail price, or only those <strong>imported directly from China</strong>. Panels
+                imported from China show an estimated landed cost, which is the base price plus an estimate
+                of import and clearing charges. These totals are always labelled as estimates, never as
+                firm quotes.
+            </p>
+            <p>
+                The site also provides a comparison page where a visitor can line up the panels they saved
+                and see which one gives the most power per cedi, a short guide to why the import cost
+                matters, and an enquiry form for visitors who want help choosing.
+            </p>
+        </section>
+
+        <section>
+            <h2>Scenarios</h2>
+            <p>These are the questions a visitor to GhSolar is likely to arrive with:</p>
+            <ul>
+                <li>Which solar panel gives me the most power for my money in cedis?</li>
+                <li>Is it cheaper to buy a panel here in Ghana, or to import it from China once I add clearing costs?
+                </li>
+                <li>How many years should a panel last before I have to replace it?</li>
+                <li>Which company actually sells the panel I have picked?</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Colour Scheme</h2>
+            <p>
+                Four colours are used across the whole site, built around sea blue. The deeper blue carries
+                the header and headings, while the lighter sea glass blue is kept for accents. Sea glass is
+                never used for small text because it is too light against a pale background, so it is used
+                behind dark text or as a border instead.
+            </p>
+
+            <div class="colour-grid">
+
+                <div class="colour-card">
+                    <div class="swatch swatch-deep"></div>
+                    <h3>Deep Sea</h3>
+                    <p class="hex">#0B4F6C</p>
+                    <p>Header and footer backgrounds, main headings, the navigation bar and button borders.</p>
+                </div>
+
+                <div class="colour-card">
+                    <div class="swatch swatch-glass"></div>
+                    <h3>Sea Glass</h3>
+                    <p class="hex">#57B8CC</p>
+                    <p>Accents only: the underline beneath each heading, the selected view button, card
+                        borders and the highlight behind an estimated price.</p>
+                </div>
+
+                <div class="colour-card">
+                    <div class="swatch swatch-ink"></div>
+                    <h3>Deep Ink</h3>
+                    <p class="hex">#12232E</p>
+                    <p>All body paragraphs, list items, panel specifications and form labels. It is a very
+                        dark blue rather than a plain black, so it sits with the other two blues.</p>
+                </div>
+
+                <div class="colour-card">
+                    <div class="swatch swatch-foam"></div>
+                    <h3>Sea Foam</h3>
+                    <p class="hex">#F4FAFC</p>
+                    <p>The page background and the inside of every card. It is an off white with a faint blue
+                        in it, which is softer to read against than pure white.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <h2>Typography</h2>
+            <p>Two fonts are used, and both are used on this planning document.</p>
+
+            <div class="font-grid">
+
+                <div class="font-card">
+                    <h3>Space Grotesk</h3>
+                    <p class="sample-heading">450 W panel, 21.3% efficient</p>
+                    <p>
+                        Used for all headings, the site name in the header, the navigation links and the button
+                        labels. It was chosen because its slightly squared letters give the site a technical
+                        feel that suits equipment, while still staying clear at small sizes on a phone.
+                    </p>
+                </div>
+
+                <div class="font-card">
+                    <h3>IBM Plex Sans</h3>
+                    <p class="sample-body">450 W panel, 21.3% efficient</p>
+                    <p>
+                        Used for every paragraph, list, table of specifications and form label. It was made for
+                        technical writing, so its numbers are easy to tell apart. That matters on a site full of
+                        watts, percentages and cedi prices sitting in a comparison table.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <h2>Wireframe</h2>
+            <p>
+                Black and white sketches of the home page. They show structure and layout only, with no
+                colour, fonts or real images. The home page has a header, a hero holding the three view
+                buttons and a sliding company picture, a band introducing the companies, the panel card
+                grid, and the footer.
+            </p>
+
+            <figure>
+                <img src="images/wireframe-small.webp"
+                    alt="Hand drawn wireframe of the GhSolar home page on a narrow phone screen, showing the logo and hamburger menu, a hero with three stacked view buttons and a sliding image, company blocks stacked one above the other, panel cards in a single column, and a footer."
+                    width="400" height="900" loading="lazy">
+                <figcaption>Small viewport — phone, 320 pixels wide</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/wireframe-large.webp"
+                    alt="Hand drawn wireframe of the GhSolar home page on a wide desktop screen, showing the logo with navigation links across the top, a hero with three view buttons and a sliding image beside its caption, company blocks with the image and text side by side, panel cards in three columns, and a footer."
+                    width="900" height="700" loading="lazy">
+                <figcaption>Large viewport — tablet and desktop</figcaption>
+            </figure>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Joel Dadzie &bull; WDD 231 Individual Project &bull; &copy; 2026 GhSolar</p>
+    </footer>
+
+</body>
+
+</html>
