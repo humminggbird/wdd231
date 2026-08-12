@@ -14,15 +14,30 @@
   <meta property="og:url" content="https://joeldadzie.github.io/wdd231/finalproject/attributions.html">
 
   <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/attributions.css">
+
+
 </head>
 
 <body>
 
-  <header>
-    <h1>Attributions and sources</h1>
+  <header class="site-header">
+    <div class="header-inner">
+      <p class="logo">
+        <a href="index.html">
+          <img src="images/favicon.svg" alt="" width="30" height="30">
+          <span>GhSolar</span>
+        </a>
+      </p>
+    </div>
   </header>
 
-  <main>
+  <main class="doc">
+    <h1>Attributions and sources</h1>
+    <p class="doc-intro">
+      Everything on GhSolar that was not made by me, and where it came from.
+    </p>
 
     <h2>Panel data</h2>
     <p>
@@ -30,7 +45,7 @@
       published datasheets of each manufacturer. Brand and model names belong to
       their makers and are used here only to describe the products.
     </p>
-    <p>
+    <p class="doc-note">
       <strong>Prices are indicative figures gathered for this class project.</strong>
       They are not live quotes. Import and clearing amounts are estimates and are
       labelled as estimates everywhere they appear on the site.
@@ -55,19 +70,20 @@
       </li>
     </ul>
 
-    <h2>Images</h2>
+    <h2>Images for this site.</h2>
     <p>
-      The site logo and favicon were drawn by Joel Dadzie. No third party
-      photographs are currently used on the site. Any photograph added later must
-      be listed here with its source and licence.
+      The site logo and favicon were drawn by Joel Dadzie. All other logos used are the trademarks of the companies they belong to.
     </p>
 
     <p><a href="index.html">Back to the catalogue</a></p>
 
   </main>
 
-  <footer>
-    <p>WDD 231 Class Project &bull; Joel Dadzie &bull; &copy; 2026 GhSolar</p>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>WDD 231 Class Project &bull; Joel Dadzie</p>
+      <p>&copy; 2026 GhSolar</p>
+    </div>
   </footer>
 
 </body>
