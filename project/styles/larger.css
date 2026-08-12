@@ -1,0 +1,57 @@
+
+@media (min-width: 650px) {
+  #menu-button {
+    display: none;
+  }
+
+  #nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: auto;
+    margin: 0;
+  }
+
+  #nav-list a {
+    border-top: none;
+    padding: 4px;
+  }
+
+  .hero {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+
+  .company-row:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+}
+
+
+@media (min-width: 900px) {
+  .showcase {
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+}
+
+
+@media (max-width: 899px) {
+  .hero {
+    background-image: none;
+  }
+
+  .showcase-media {
+    padding: 28px 56px 52px 56px;
+    min-height: 260px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .details-button,
+  .submit-button,
+  #clear-button,
+  #dialog-close {
+    transition: none;
+  }
+}

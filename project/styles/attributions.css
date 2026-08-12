@@ -1,106 +1,27 @@
-:root {
-    --deep-sea: #0B4F6C;
-    --sea-glass: #57B8CC;
-    --ink: #12232E;
-    --sea-foam: #F4FAFC;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    font-family: "IBM Plex Sans", Arial, sans-serif;
-    color: var(--ink);
-    background-color: var(--sea-foam);
-    line-height: 1.6;
-    margin: 0;
-}
-
-.site-header {
-    background-color: var(--ink);
-    color: var(--sea-foam);
-}
-
-.header-inner {
-    padding: 14px clamp(16px, 4vw, 48px);
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 8px;
-}
-
-.logo {
-    font-family: "Space Grotesk", Arial, sans-serif;
-    font-size: 1.4rem;
-    font-weight: 700;
-    margin: 0;
-}
-
-.logo a {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: var(--sea-foam);
-    text-decoration: none;
-}
-
-.logo a:hover span {
-    text-decoration: underline;
-    text-decoration-color: var(--sea-glass);
-    text-underline-offset: 6px;
-}
-
-.logo img {
-    display: block;
-}
 
 .doc {
     max-width: 72ch;
     padding: 36px clamp(16px, 4vw, 48px) 56px;
 }
 
-h1,
-h2 {
-    font-family: "Space Grotesk", Arial, sans-serif;
-    line-height: 1.25;
-    color: var(--deep-sea);
-}
-
-h1 {
+.doc h1 {
     font-size: clamp(1.6rem, 3vw, 2.1rem);
-    margin: 0 0 12px 0;
 }
 
-h2 {
+.doc h2 {
     font-size: 1.25rem;
-    border-bottom: 3px solid var(--sea-glass);
-    padding-bottom: 6px;
-    margin: 36px 0 16px 0;
-}
-
-p {
-    margin: 0 0 12px 0;
-}
-
-a {
-    color: var(--deep-sea);
-}
-
-a:focus-visible {
-    outline: 3px solid var(--deep-sea);
-    outline-offset: 2px;
+    margin-top: 36px;
 }
 
 .doc-intro {
     font-size: 1.05rem;
 }
 
-ul {
+.doc ul {
     padding-left: 20px;
 }
 
-li {
+.doc li {
     margin-bottom: 8px;
 }
 
@@ -139,22 +60,4 @@ code {
     display: inline-block;
     margin-top: 24px;
     font-weight: 600;
-}
-
-.site-footer {
-    background-color: var(--ink);
-    color: var(--sea-foam);
-    border-top: 4px solid var(--sea-glass);
-}
-
-.footer-inner {
-    padding: 20px clamp(16px, 4vw, 48px);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 8px;
-}
-
-.footer-inner p {
-    margin: 0;
 }
