@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Why Solar in Ghana and How to Enquire — GhSolar</title>
+  <meta name="description" content="Why solar power suits Ghana, how import and clearing costs change the real price of a panel, and a form to ask GhSolar for a recommendation.">
+  <meta name="author" content="Joel Dadzie">
+
+  <meta property="og:title" content="Why Solar in Ghana and How to Enquire — GhSolar">
+  <meta property="og:description" content="Understand import costs, cost per watt and which panel suits your home, then send an enquiry.">
+  <meta property="og:image" content="https://joeldadzie.github.io/wdd231/finalproject/images/favicon.svg">
+  <meta property="og:url" content="https://joeldadzie.github.io/wdd231/finalproject/enquiry.html">
+
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&family=Space+Grotesk:wght@600;700&display=swap">
+
+  <script type="module" src="scripts/enquiry.mjs"></script>
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <p class="logo">
+        <a href="index.html">
+          <img src="images/favicon.svg" alt="" width="30" height="30">
+          <span>GhSolar</span>
+        </a>
+      </p>
+
+      <nav>
+        <button id="menu-button" type="button" aria-expanded="false" aria-controls="nav-list">
+          <span class="visually-hidden">Menu</span>
+          <span aria-hidden="true">&#9776;</span>
+        </button>
+        <ul id="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="compare.html">Compare</a></li>
+          <li><a href="enquiry.html" class="active" aria-current="page">Enquiry</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-intro">
+      <h1>Why solar, and what it really costs</h1>
+      <p>
+        Ghana gets strong sunshine all year, and grid power is not always steady.
+        Solar answers both problems, but the sticker price of a panel is only part
+        of the story. This page explains the rest, and the form at the bottom lets
+        you ask for a recommendation.
+      </p>
+    </section>
+
+    <section class="info">
+      <h2>Three things worth knowing</h2>
+
+      <div class="info-grid">
+        <article class="info-card">
+          <h3>Cost per watt beats price</h3>
+          <p>
+            A cheaper panel is not cheaper if it makes less power. Dividing the price
+            by the wattage gives the cost per watt, and that single number lets you
+            compare a 425 W panel against a 665 W one fairly.
+          </p>
+        </article>
+
+        <article class="info-card">
+          <h3>Importing is not free</h3>
+          <p>
+            A panel that looks cheap on a Chinese supplier site still has to reach
+            Tema, clear customs and get to your roof. Shipping, duty and clearing
+            charges can add a large share of the base price.
+          </p>
+        </article>
+
+        <article class="info-card">
+          <h3>Efficiency matters on small roofs</h3>
+          <p>
+            Efficiency is how much of the sunlight hitting the panel becomes
+            electricity. On a small roof a more efficient panel earns its extra cost,
+            because you simply cannot fit more panels.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="enquiry">
+      <h2>Ask for a recommendation</h2>
+      <p>
+        Fill in the form and we will suggest panels that suit your roof and budget.
+        Fields marked with a star are required.
+      </p>
+
+      <form action="form-action.html" method="get" class="enquiry-form">
+
+        <fieldset>
+          <legend>Your details</legend>
+
+          <p class="field">
+            <label for="fullname">Full name *</label>
+            <input type="text" id="fullname" name="fullname" required>
+          </p>
+
+          <p class="field">
+            <label for="email">Email address *</label>
+            <input type="email" id="email" name="email" required>
+          </p>
+
+          <p class="field">
+            <label for="phone">Phone number</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}"
+              title="Ten digits, for example 0244123456">
+            <span class="hint">Ten digits, for example 0244123456</span>
+          </p>
+
+          <p class="field">
+            <label for="region">Region *</label>
+            <select id="region" name="region" required>
+              <option value="">Please choose</option>
+              <option value="Greater Accra">Greater Accra</option>
+              <option value="Ashanti">Ashanti</option>
+              <option value="Western">Western</option>
+              <option value="Central">Central</option>
+              <option value="Eastern">Eastern</option>
+              <option value="Northern">Northern</option>
+              <option value="Volta">Volta</option>
+              <option value="Other">Other</option>
+            </select>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>What you need</legend>
+
+          <p class="field">
+            <label for="usage">What will the power run? *</label>
+            <select id="usage" name="usage" required>
+              <option value="">Please choose</option>
+              <option value="Home">A home</option>
+              <option value="Small shop">A small shop</option>
+              <option value="Office">An office</option>
+              <option value="Farm or borehole">A farm or borehole</option>
+            </select>
+          </p>
+
+          <p class="field">
+            <label for="budget">Budget in cedis</label>
+            <input type="number" id="budget" name="budget" min="500" max="200000" step="100">
+          </p>
+
+          <fieldset class="radio-set">
+            <legend>Which panels interest you?</legend>
+
+            <p class="radio-row">
+              <input type="radio" id="view-all" name="view" value="Either" checked>
+              <label for="view-all">Either</label>
+            </p>
+            <p class="radio-row">
+              <input type="radio" id="view-ghana" name="view" value="Bought in Ghana">
+              <label for="view-ghana">Bought in Ghana</label>
+            </p>
+            <p class="radio-row">
+              <input type="radio" id="view-china" name="view" value="Imported from China">
+              <label for="view-china">Imported from China</label>
+            </p>
+          </fieldset>
+
+          <p class="field">
+            <label for="message">Anything else we should know?</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+          </p>
+        </fieldset>
+
+        <button type="submit" class="submit-button">Send enquiry</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>WDD 231 Class Project &bull; Joel Dadzie</p>
+      <p>&copy; 2026 GhSolar</p>
+      <p>
+        <a href="#">Demo video</a> &bull;
+        <a href="attributions.html">Attributions</a>
+      </p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

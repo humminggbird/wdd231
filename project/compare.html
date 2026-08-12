@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Compare Solar Panels Side by Side — GhSolar</title>
+  <meta name="description" content="Pick up to four solar panels and compare their power, efficiency, price in cedis, cost per watt and lifespan side by side.">
+  <meta name="author" content="Joel Dadzie">
+
+  <meta property="og:title" content="Compare Solar Panels Side by Side — GhSolar">
+  <meta property="og:description" content="Choose up to four panels and see their specifications and cost per watt next to each other.">
+  <meta property="og:image" content="https://joeldadzie.github.io/wdd231/finalproject/images/favicon.svg">
+  <meta property="og:url" content="https://joeldadzie.github.io/wdd231/finalproject/compare.html">
+
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&family=Space+Grotesk:wght@600;700&display=swap">
+
+  <script type="module" src="scripts/compare.mjs"></script>
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <p class="logo">
+        <a href="index.html">
+          <img src="images/favicon.svg" alt="" width="30" height="30">
+          <span>GhSolar</span>
+        </a>
+      </p>
+
+      <nav>
+        <button id="menu-button" type="button" aria-expanded="false" aria-controls="nav-list">
+          <span class="visually-hidden">Menu</span>
+          <span aria-hidden="true">&#9776;</span>
+        </button>
+        <ul id="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="compare.html" class="active" aria-current="page">Compare</a></li>
+          <li><a href="enquiry.html">Enquiry</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-intro">
+      <h1>Compare panels</h1>
+      <p>
+        Tick up to four panels and their specifications appear side by side below.
+        The cost per watt row is the one to watch, because it shows which panel
+        gives the most power for every cedi spent.
+      </p>
+    </section>
+
+    <section class="picker">
+      <h2>Choose your panels</h2>
+
+      <div class="picker-controls">
+        <p id="picker-count">0 of 4 selected</p>
+        <button id="clear-button" type="button">Clear all</button>
+      </div>
+
+      <ul id="picker-list" class="picker-list"></ul>
+    </section>
+
+    <section>
+      <h2>Side by side</h2>
+      <div id="compare-area"></div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>WDD 231 Class Project &bull; Joel Dadzie</p>
+      <p>&copy; 2026 GhSolar</p>
+      <p>
+        <a href="#">Demo video</a> &bull;
+        <a href="attributions.html">Attributions</a>
+      </p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

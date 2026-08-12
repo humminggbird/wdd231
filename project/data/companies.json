@@ -1,0 +1,76 @@
+{
+  "companies": [
+    {
+      "id": 1,
+      "name": "Translight Solar",
+      "source": "Ghana",
+      "town": "Accra",
+      "text": "A retailer selling panels, inverters and batteries from a shop in Accra. Buying here means the panel is already cleared, so the price you see is the price you pay.",
+      "image": "images/companies/translightsolar.png",
+      "imageAlt": "Translight Solar logo."
+    },
+    {
+      "id": 2,
+      "name": "Deep Solar Ghana",
+      "source": "Ghana",
+      "town": "Accra",
+      "text": "Supplies panels for homes and small businesses and handles the installation. Useful if you would rather not arrange a fitter separately.",
+      "image": "images/companies/deep-solar-ghana.avif",
+        "imageAlt": "Deep Solar Ghana logo."
+      },
+      {
+        "id": 3,
+      "name": "Optima Solar Systems",
+      "source": "Ghana",
+      "town": "Accra",
+      "text": "Focuses on larger panels for offices and shops. Stock changes with what has recently cleared the port, so prices move through the year.",
+      "image": "images/companies/optima-solar.webp",
+      "imageAlt": "Optima Solar Systems logo."
+    },
+    {
+      "id": 4,
+      "name": "Led's Go Solar",
+      "source": "Ghana",
+      "town": "Tema",
+      "text": "Sits close to Tema port, which keeps inland transport short. Often carries the high wattage bifacial panels used on flat commercial roofs.",
+      "image": "images/companies/leds-go-solar.png",
+      "imageAlt": "Led's Go Solar logo."
+    },
+    {
+      "id": 5,
+      "name": "TALESUN",
+      "source": "China",
+      "town": "Xi'an, China",
+      "text": "One of the largest solar manufacturers in the world. Its Hi-MO range is widely imported into Ghana, and the base price is low because you are buying at the factory end.",
+      "image": "images/companies/talesun.png",
+      "imageAlt": "Logo of TALESUN, a Chinese solar panel manufacturer."
+    },
+    {
+      "id": 6,
+      "name": "Jinko Solar",
+      "source": "China",
+      "town": "Shangrao, China",
+      "text": "Makes the Tiger Neo panels found in the catalogue. Importing directly cuts the retail markup, but you take on shipping, duty and clearing yourself.",
+      "image": "images/companies/jinko-solar.png",
+      "imageAlt": "Logo of Jinko Solar, a Chinese solar panel manufacturer."
+    },
+    {
+      "id": 7,
+      "name": "Trina Solar",
+      "source": "China",
+      "town": "Changzhou, China",
+      "text": "Produces the Vertex range, including smaller panels that suit tight roofs. Minimum order sizes usually make direct import worthwhile only for bigger jobs.",
+      "image": "images/companies/trina-solar.png",
+      "imageAlt": "Placeholder image for Trina Solar, to be replaced with a photo of their panels"
+    },
+    {
+      "id": 8,
+      "name": "JA Solar",
+      "source": "China",
+      "town": "Beijing, China",
+      "text": "Supplies the DeepBlue panels in this catalogue. Efficiency is high, which matters when the roof is small and you cannot simply add more panels.",
+      "image": "images/companies/ja-solar.png",
+      "imageAlt": "Placeholder image for JA Solar, to be replaced with a photo of their panels"
+    }
+  ]
+}
